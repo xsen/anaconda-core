@@ -3,8 +3,7 @@
 Route::set('media', 'media(/<file>)', array('file' => '.+'))
     ->defaults(
         array(
-            'controller' => 'Main',
-            'action'     => 'media',
+            'controller' => 'Media',
             'file'       => null,
         )
     );
