@@ -1,7 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
 class Controller_Media extends Controller_Template {
-
     /**
      * Отдача браузеру JS и CSS файлов.
      * @return  void
@@ -31,5 +30,6 @@ class Controller_Media extends Controller_Template {
             $this->response->status(404);
         }
     }
+
 }
 ?>
