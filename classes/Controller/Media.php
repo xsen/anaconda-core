@@ -8,7 +8,6 @@ class Controller_Media extends Controller_Template {
     public function action_index()
     {
         $file = $this->request->param('file');
-
         $ext = pathinfo($file, PATHINFO_EXTENSION);
         $file = substr($file, 0, -(strlen($ext) + 1));
 
@@ -27,9 +26,8 @@ class Controller_Media extends Controller_Template {
         }
         else
         {
-            $this->response->status(404);
+            throw new HTTP_Exception_404;
         }
     }
-
 }
 ?>
