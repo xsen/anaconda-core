@@ -14,10 +14,6 @@
         body {
             padding-top: 50px;
         }
-        .starter-template {
-            padding: 40px 15px;
-            text-align: center;
-        }
     </style>
 </head>
 
@@ -34,20 +30,8 @@
             <a class="navbar-brand" href="#"><?= Anaconda_Core::get_product_name() ?></a>
         </div>
         <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <?
-                $top_menu = Kohana::$config->load('top_menu')->as_array();
-                asort($top_menu);
-
-                foreach ($top_menu as $_item_menu) {
-                    if ( !$_item_menu['access'] )
-                        continue;
-
-                    $class = in_array(Request::current()->controller(), $_item_menu['controllers']) ? 'class="active"' : null;
-                    echo '<li ' . $class . '><a href="' . $_item_menu['url'] . '">' . $_item_menu['name'] . '</a></li>';
-                }
-                ?>
-            </ul>
+            <?=View::factory('navbar/main')?>
+            <?=View::factory('navbar/right')?>
         </div><!--/.nav-collapse -->
     </div>
 </div>
