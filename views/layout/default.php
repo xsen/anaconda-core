@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/media/css/main.css">
     <link rel="stylesheet" href="/media/css/theme.css">
     <link rel="stylesheet" href="/media/lib/fullcalendar-1.6.2/fullcalendar/fullcalendar.css">
-
+    <link rel="stylesheet" href="/media/lib/datatables/css/DT_bootstrap.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -94,7 +94,21 @@
 <script src="/media/lib/flot/jquery.flot.js"></script>
 <script src="/media/lib/flot/jquery.flot.selection.js"></script>
 <script src="/media/lib/flot/jquery.flot.resize.js"></script>
+
+<script src="/media/lib/datatables/jquery.dataTables.js"></script>
+<script src="/media/lib/datatables/DT_bootstrap.js"></script>
+<script src="/media/lib/tablesorter/js/jquery.tablesorter.min.js"></script>
+<script src="/media/lib/touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+
 <script src="/media/js/main.min.js"></script>
+
+<script>
+    $(function() {
+        metisTable();
+        // metisSortable();
+    });
+</script>
 
 </body>
 </html>

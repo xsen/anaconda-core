@@ -72,7 +72,7 @@ var styleSwitcher = {
             }
             if (localStorage.pattern) {
                 $('body').css({
-                    'background': 'url(assets/img/pattern/' + localStorage.pattern + '.png) repeat'
+                    'background': 'url(/media/img/pattern/' + localStorage.pattern + '.png) repeat'
                 });
             }
         }
@@ -297,7 +297,7 @@ var styleSwitcher = {
                 .append(
                     $('<a/>')
                         .css({
-                            'background': 'url(assets/img/pattern/' + patternImages[i].image + '.png) repeat'
+                            'background': 'url(/media//img/pattern/' + patternImages[i].image + '.png) repeat'
                         })
                         .attr({
                             'href': '#',
@@ -311,7 +311,7 @@ var styleSwitcher = {
         patternList.find('a').on('click', function (e) {
             e.preventDefault();
             $('body').css({
-                'background-image': 'url(assets/img/pattern/' + $(this).data('patternImage') + '.png)',
+                'background-image': 'url(/media//img/pattern/' + $(this).data('patternImage') + '.png)',
                 'background-repeat': ' repeat'
             });
             $this.patternImage = $(this).data('patternImage');

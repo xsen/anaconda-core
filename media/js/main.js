@@ -12,10 +12,6 @@ $(function () {
     });
 
 
-    $('a[data-toggle=tooltip]').tooltip();
-    $('a[data-tooltip=tooltip]').tooltip();
-
-
     $('.minimize-box').on('click', function (e) {
         e.preventDefault();
         var $icon = $(this).children('i');
@@ -38,7 +34,7 @@ $(function () {
     });
     
     $('#menu').metisMenu();
-    
+
 });
 function metisButton() {
     window.prettyPrint && prettyPrint();
@@ -1057,7 +1053,7 @@ function metisTable() {
         "sDom": "<'pull-right'l>t<'row'<'col-lg-6'f><'col-lg-6'p>>",
         "sPaginationType": "bootstrap",
         "oLanguage": {
-            "sLengthMenu": "Show _MENU_ entries"
+            "sLengthMenu": "Показать _MENU_ строк"
         }
     });
     /*----------- END datatable CODE -------------------------*/
