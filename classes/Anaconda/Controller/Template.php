@@ -23,7 +23,7 @@ abstract class Anaconda_Controller_Template extends Kohana_Controller_Template {
     /**
      * @var array  Массив JS файлов для подключения к шаблну
      */
-    protected $_js_file = array();
+    protected $_js_file = array(); // fasdf
 
     /**
      * @var array  Массив CSS файлов для подключения к шаблну
@@ -160,13 +160,7 @@ abstract class Anaconda_Controller_Template extends Kohana_Controller_Template {
     protected function attach_default_media_files()
     {
         $media_files = array(
-            'media/js/jquery-2.0.3.min.js',
-            'media/bootstrap/js/bootstrap.min.js',
-            'media/bootstrap/assets/js/html5shiv.js',
-            'media/bootstrap/assets/js/respond.min.js',
 
-            'media/bootstrap/css/bootstrap.css',
-            'media/css/main.css',
         );
 
         foreach ($media_files as $_file) {
