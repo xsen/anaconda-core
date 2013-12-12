@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="/media/css/main.css">
     <link rel="stylesheet" href="/media/css/theme.css">
     <link rel="stylesheet" href="/media/lib/fullcalendar-1.6.2/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="/media/lib/uniform/themes/default/css/uniform.default.css">
     <link rel="stylesheet" href="/media/lib/datatables/css/DT_bootstrap.css">
+    <link rel="stylesheet" href="/media/lib/tagsinput/jquery.tagsinput.css">
+    <link rel="stylesheet" href="/media/lib/chosen/chosen.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -99,14 +102,24 @@
 <script src="/media/lib/datatables/DT_bootstrap.js"></script>
 <script src="/media/lib/tablesorter/js/jquery.tablesorter.min.js"></script>
 <script src="/media/lib/touch-punch/jquery.ui.touch-punch.min.js"></script>
-
-
+<script src="/media/lib/inputlimiter/jquery.inputlimiter.1.3.1.min.js"></script>
+<script src="/media/lib/autosize/jquery.autosize.min.js"></script>
+<script src="/media/lib/chosen/chosen.jquery.min.js"></script>
+<script src="/media/lib/uniform/jquery.uniform.min.js"></script>
+<script src="/media/lib/tagsinput/jquery.tagsinput.min.js"></script>
 <script src="/media/js/main.min.js"></script>
 
 <script>
     $(function() {
+        // TODO: refactor
+        $(".chzn-select").chosen();
+
+        $(".chzn-select-deselect").chosen({
+            allow_single_deselect: true
+        });
+
         metisTable();
-        // metisSortable();
+        //metisSortable();
     });
 </script>
 

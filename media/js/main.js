@@ -21,6 +21,7 @@ $(function () {
             $icon.removeClass('icon-chevron-up').addClass('icon-chevron-down');
         }
     });
+
     $('.close-box').click(function () {
         $(this).closest('.box').hide('slow');
     });
@@ -33,9 +34,8 @@ $(function () {
         $(this).children('span').children('i').toggleClass('icon-angle-down');
     });
     
-    $('#menu').metisMenu();
-
 });
+
 function metisButton() {
     window.prettyPrint && prettyPrint();
     $.each($('.inner a.btn'), function () {

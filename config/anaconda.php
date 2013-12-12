@@ -7,5 +7,6 @@
  */
 
 return array(
+    'env' => Kohana::PRODUCTION,
     'product_name' => 'Анаконда',
 );

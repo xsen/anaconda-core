@@ -82,6 +82,10 @@ abstract class Anaconda_Controller_Template extends Kohana_Controller_Template {
         $this->template->crumbs  = $this->_crumbs;
         $this->template->content = ob_get_clean();
 
+        if ( Kohana::$environment !== Kohana::PRODUCTION ) {
+            $this->template->content .= View::factory('profiler/stats');
+        }
+
         parent::after();
     }
 
