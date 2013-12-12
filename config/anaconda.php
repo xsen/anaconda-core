@@ -2,7 +2,8 @@
 
 /**
  * Основной конфигурационный файл Anaconda
- * 
+
+ * int env set Kohana::$environment environment variable has been supplied.
  * string product_name Название проекта
  */
 

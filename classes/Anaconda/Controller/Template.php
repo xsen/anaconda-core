@@ -79,7 +79,7 @@ abstract class Anaconda_Controller_Template extends Kohana_Controller_Template {
         $this->template->_js_file  = implode(" \n", $this->_js_file);
         $this->template->_css_file = implode(" \n", $this->_css_file);
 
-        $this->template->crumbs  = $this->_crumbs;
+        $this->template->crumbs  = View::factory('crumbs', array('crumbs' => $this->_crumbs));
         $this->template->content = ob_get_clean();
 
         if ( Kohana::$environment !== Kohana::PRODUCTION ) {

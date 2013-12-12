@@ -26,6 +26,14 @@
     <link rel="stylesheet" href="/media/lib/datatables/css/DT_bootstrap.css">
     <link rel="stylesheet" href="/media/lib/tagsinput/jquery.tagsinput.css">
     <link rel="stylesheet" href="/media/lib/chosen/chosen.min.css">
+    <link rel="stylesheet" href="/media/css/chosen-bootstrap.css">
+
+    <style>
+        div.dataTables_length {
+            position: absolute;
+            right: 10px;
+            top: 14px;
+    </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -76,6 +84,7 @@
     <div id="content">
         <div class="outer">
             <div class="inner">
+                <?=$crumbs?>
                 <?=$content?>
             </div>
             <!-- end .inner -->
@@ -112,6 +121,16 @@
 <script>
     $(function() {
         // TODO: refactor
+
+        $( document ).on( "click", ".btn-danger", function(ev) {
+            var text = "Вы действительно хотите это сделать?";
+
+            if ( $(this).attr("alt") ) {
+                text = $(this).attr("alt");
+            }
+            return confirm(text);
+        } );
+
         $(".chzn-select").chosen();
 
         $(".chzn-select-deselect").chosen({
