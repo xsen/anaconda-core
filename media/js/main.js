@@ -417,6 +417,7 @@ function formGeneral() {
     /*----------- BEGIN spinner CODE -------------------------*/
 
     $('#spin1').spinner();
+
     $("#spin2").spinner({
         step: 0.01,
         numberFormat: "n"
