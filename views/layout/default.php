@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/media/lib/tagsinput/jquery.tagsinput.css">
     <link rel="stylesheet" href="/media/lib/chosen/chosen.min.css">
     <link rel="stylesheet" href="/media/css/chosen-bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap-fileupload.min.css">
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/flick/jquery-ui.css">
 
     <style>
