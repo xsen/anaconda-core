@@ -118,7 +118,7 @@
 <script src="/media/lib/chosen/chosen.jquery.min.js"></script>
 <script src="/media/lib/uniform/jquery.uniform.min.js"></script>
 <script src="/media/lib/tagsinput/jquery.tagsinput.min.js"></script>
-<script src="/media/js/main.min.js"></script>
+<script src="/media/js/main.js"></script>
 
 <script>
     $(function() {

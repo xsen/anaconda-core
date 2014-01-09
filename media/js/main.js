@@ -1054,7 +1054,16 @@ function metisTable() {
         "sDom": "<'pull-right'l>t<'row'<'col-lg-6'f><'col-lg-6'p>>",
         "sPaginationType": "bootstrap",
         "oLanguage": {
-            "sLengthMenu": "Показать _MENU_ строк"
+            "sLengthMenu": "Показать _MENU_ строк",
+            "sZeroRecords": "Ничего не найдено",
+            "sInfo": "Показано с _START_ по _END_ из _TOTAL_ записей",
+            "sSearch": "Поиск:",
+            "sInfoEmpty": "Показано с 0 по 0 из 0 записей",
+            //"sInfoFiltered": "(filtered from _MAX_ total records)"
+            "oPaginate" : {
+                "sNext": "Вперед",
+                "sPrevious": "Назад",
+            }
         }
     });
     /*----------- END datatable CODE -------------------------*/
