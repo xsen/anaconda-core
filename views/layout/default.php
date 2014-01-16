@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="/media/css/bootstrap-fileupload.min.css">
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/flick/jquery-ui.css">
 
+    <script src="/media/lib/jquery.min.js"></script>
+    <script src="/media/lib/bootstrap/js/bootstrap.min.js"></script>
+
     <style>
         div.dataTables_length {
             position: absolute;
@@ -98,8 +101,6 @@
     <p>2013 &copy; SiteSoft</p>
 </div>
 
-<script src="/media/lib/jquery.min.js"></script>
-<script src="/media/lib/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/media/js/style-switcher.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="/media/lib/fullcalendar-1.6.2/fullcalendar/fullcalendar.min.js"></script>
